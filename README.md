@@ -18,9 +18,9 @@ You can type a title for your project in the _Project Activity_ text box and pre
 # Assignment
 We want you to make the following changes to this web application:
 
-1. Implement the delete functionality. If the user selects an item in the box in the tree, and then presses the Delete button, the item should disappear from the tree.   
+1- Implement the delete functionality. If the user selects an item in the box in the tree, and then presses the Delete button, the item should disappear from the tree.   
 
-1. Implement the export button to export the hierarchy into a downloadable text file. For example the for the hierarchy in the screen shot above the text file should look like this:
+2- Implement the export button to export the hierarchy into a downloadable text file. For example the for the hierarchy in the screen shot above the text file should look like this:
 
 export.txt:
 ```
@@ -30,18 +30,15 @@ Test
     Part A
 ```
 
-1. Update the UI so that all the components stay centered as opposed to left aligned. They should stay centered even if the window is resized.
+3- Update the UI so that all the components stay centered as opposed to left aligned. They should stay centered even if the window is resized.
 
-1. Bonus: How would you test this code?
+
+4- (Bonus) How would you test this code?
+
+5- (Bonus) Use a database layer to persist the project hierarchy when user adds or deletes the activites. The web application should be able to show the same hierarchy as last session even when it is stopped and run again. 
  
 
 ## Important Notes
 * Follow the design patterns used in the code and separate your logic from UI as much as possibe. 
- 
-
-
-# Submission
-
-
-
-After making you changes, make  
+* Make sure your code is readable and easy to follow. 
+* If we need to do other steps to run your application, in addition to `mvn jetty:run`, please include them in your submission. 
