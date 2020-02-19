@@ -1,52 +1,21 @@
-java-challenge
-==============
+# Aimsio Java Programming Assignment
+This project implements a simple web application that allows the user to create a hierarchy of activities for a project (Work break down structure).
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
+## Running the web application
+To run the project, make sure you have JDK and maven installed on your machine and then run the following command in the root directory of the project:
+```bash
+mvn compile; mvn jetty:run
+```
+Then you can open a browser and access the web application through this URL: http://localhost:8080
 
+## Using the web application
+You can type a title for your project in the _Project Activity_ text box and press _Add_ button. The item will be added to the box labled **Project Activities** below. In order to add a sub activity, before pressing the Add button, select an item in the box below. 
 
-Workflow
-========
+**Project Actitivies** is a Tree structure that shows the hierarchy of project activities. 
+![Screenshot](imgs/screenshot1.png)
 
-To compile the entire project, run "mvn install".
+# Assignment
+We want you to make the following changes to this web application:
+1. Implement the delete functionality. If the user selects an item in the box in the tree, and then presses the Delete button, the item should disappear from the tree.   
+2. Implement the export button to export the hierarchy into a downloadable text file:
 
-To run the application, run "mvn jetty:run" and open http://localhost:8080/ .
-
-To produce a deployable production mode WAR:
-- change productionMode to true in the servlet class configuration (nested in the UI class)
-- run "mvn clean package"
-- test the war file with "mvn jetty:run-war"
-
-Client-Side compilation
--------------------------
-
-The generated maven project is using an automatically generated widgetset by default. 
-When you add a dependency that needs client-side compilation, the maven plugin will 
-automatically generate it for you. Your own client-side customizations can be added into
-package "client".
-
-Debugging client side code
-  - run "mvn vaadin:run-codeserver" on a separate console while the application is running
-  - activate Super Dev Mode in the debug window of the application
-
-Developing a theme using the runtime compiler
--------------------------
-
-When developing the theme, Vaadin can be configured to compile the SASS based
-theme at runtime in the server. This way you can just modify the scss files in
-your IDE and reload the browser to see changes.
-
-To use the runtime compilation, open pom.xml and comment out the compile-theme 
-goal from vaadin-maven-plugin configuration. To remove a possibly existing 
-pre-compiled theme, run "mvn clean package" once.
-
-When using the runtime compiler, running the application in the "run" mode 
-(rather than in "debug" mode) can speed up consecutive theme compilations
-significantly.
-
-It is highly recommended to disable runtime compilation for production WAR files.
-
-Using Vaadin pre-releases
--------------------------
-
-If Vaadin pre-releases are not enabled by default, use the Maven parameter
-"-P vaadin-prerelease" or change the activation default value of the profile in pom.xml .
