@@ -16,6 +16,12 @@ You can type a title for your project in the _Project Activity_ text box and pre
 
 # Assignment
 We want you to make the following changes to this web application:
-1. Implement the delete functionality. If the user selects an item in the box in the tree, and then presses the Delete button, the item should disappear from the tree.   
-2. Implement the export button to export the hierarchy into a downloadable text file:
 
+1. Implement the delete functionality. If the user selects an item in the box in the tree, and then presses the Delete button, the item should disappear from the tree.   
+
+1. Implement the export button to export the hierarchy into a downloadable text file. For example the for the hierarchy in the screen shot above the text file should look like this:
+```
+
+```
+
+s1. 
